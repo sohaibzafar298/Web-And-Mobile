@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page</title>
+    <link rel="stylesheet" href="./web page_files/style.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <section id="text-area">
+        <div class="text-row">
+            <div class="text-left-col">
+                <h2>Ara Profile</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo a fugit, iusto adipisci
+                    consequuntur ipsam magnam, voluptate, iste eum asperiores est animi dolore deleniti. Fuga et tempore
+                    repellat accusamus?</p>
+            </div>
+            <div class="text-right-col">
+                <img src="./web page_files/fbicon.png" alt="">
+                <img src="./web page_files/instagram icon.jpg" alt="">
+                <img src="./web page_files/twittericon.png" alt=""><br>
+                <a href="http://127.0.0.1:5500/#" id="text-link">fb/naveed.trainer</a>
+            </div>
+        </div>
+    </section>
+    <section id="images">
+        <div class="images-row">
+            <div class="images-left-col"><img src="./web page_files/img2.jpeg" alt=""></div>
+            <div class="images-middle-col">
+                <h2>cabel Tray</h2><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, aut? Minima enim nostrum, assumenda
+                    iste libero necessitatibus officiis labore. Eaque dolore non facilis animi nulla recusandae ut rem
+                    ratione, qui neque voluptate fugiat error?</p>
+            </div>
+            <div class="images-right-col">
+                <img src="./web page_files/img1.jpeg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit neque necessitatibus animi corrupti,
+                    laudantium omnis nulla totam qui incidunt dolores obcaecati amet assumenda a ducimus vel deleniti id
+                    vitae accusamus? Mollitia distinctio amet repellendus.</p>
+
+            </div>
+        </div>
+    </section>
+    <section id="list">
+        <div class="list-row">
+            <div class="list-left-col">
+                <ul>
+                    <li>Area</li>
+                <li>profile</li>
+                <li>sheet</li>
+                <li>170</li>
+            </ul>
+            </div>
+            <div class="list-middle-col">
+                <ul>
+                    <li>Area</li>
+                <li>profile</li>
+                <li>sheet</li>
+                <li>170</li>
+            </ul>
+
+            </div>
+            <div class="list-right-col">
+                <ol>
+                    <li>Area</li>
+                <li>profile</li>
+                <li>sheet</li>
+                <li>170</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <form action="http://127.0.0.1:5500/">
+            <h1>Join US</h1>
+            <input type="text" placeholder="enter your name"><br>
+            <input type="text" placeholder="Address"><br>
+            <input type="text" placeholder="city"><br>
+            <input type="text" placeholder="Zip"><br>
+            <input type="radio" name="" id="">First Year
+            <input type="radio" name="" id="">Second Year<br>
+            <textarea name="" id="" cols="40" rows="20" placeholder="Comment"></textarea>
+
+
+
+        </form>
+    </section>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
